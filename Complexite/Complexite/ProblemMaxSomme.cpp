@@ -26,6 +26,8 @@ ProblemMaxSomme::~ProblemMaxSomme()
     //dtor
 }
 
+//Génèration des toutes les paires possibles de positions i et j, 1 ≤ i ≤ j ≤ n, et pour chaque
+//possibilité on calcule la somme S i,j . On retourne le S i,j le plus grand
 
 int ProblemMaxSomme::algo1()
 
@@ -48,6 +50,12 @@ int ProblemMaxSomme::algo1()
     }
     return res;
 }
+
+//Pré-calcul pour remplir un tableau SOMME
+//génèration des toutes les paires possibles de positions i et j, 1 ≤ i ≤ j ≤ n, et pour chaque possibilité, on a :
+// S i,j =SOMME[j] si i = 1
+// S i,j =SOMME[j]− SOMME[i − 1] sinon
+//retourne le S i,j le plus grand
 
 int ProblemMaxSomme::algo2()
 {
@@ -94,6 +102,9 @@ int ProblemMaxSomme::max3(int a,int b,int c)
         return max(x,c);
 }
 
+//La fonction MAX(p, q) renvoie le maximum entre p et q
+//La fonction MAX3(p, q, r) renvoie le maximum entre p, q et r
+
 int ProblemMaxSomme::algo3(int a,int b)
 {
             if (a>b){
@@ -129,6 +140,8 @@ int ProblemMaxSomme::algo3(int a,int b)
         }
     return max3(amax+bmax,algo3(a,c),algo3(c+1,b));
 }
+
+//La fonction MAX(p, q) renvoie le maximum entre p et q
 
 int ProblemMaxSomme::algo4()
 {

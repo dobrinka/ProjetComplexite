@@ -23,21 +23,9 @@ int main(int argc, char *argv[])
 {
     clock_t tStart = clock();
     vector<int> Somme;
-    //int sum = 0;
-    // int T [5] = {6, -2, 7, 4, 12};
-
-    //int S [4] =0;
-
-
-//    int N = atoi(argv[1]);
     int maxInt = N*4;
     std::vector<int> t;
     bool indPos = false;
-    //srand(time(NULL));
-    //struct timeval tbegin, tend;
-    //double texec = 0;
-   // gettimeofday(&tbegin, NULL);
-    //int conf=0;
     // Création du tableau
     //int cpt = 0;
     for (int i = 0; i < N; i++)
@@ -63,8 +51,6 @@ int main(int argc, char *argv[])
 
                 if (it2 == t.end())
                 fin = true;
-                //conf++;
-
             }
         }
 
