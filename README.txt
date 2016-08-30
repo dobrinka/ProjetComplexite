@@ -1,5 +1,3 @@
-Cet archive a un dossier MaxSomme2 et troi fichiers:Complexite.txt, TempsExecution.txt et README.txt.
-
 Dans le dossier MaxSomme2 se trouvent les documents:
 main.cpp, MaxSomme2.cbp, MaxSomme2.depend, MaxSomme2.layout, 
 ProblemMaxSomme.cpp et ProblemMaxSomme.h, 
